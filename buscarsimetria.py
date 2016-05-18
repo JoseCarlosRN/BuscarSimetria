@@ -5,9 +5,9 @@ import random
 from funcoes import *
 
 
-m = input("Digite o primeiro elemento da relaÁ„o:") #Pegando para M(Primeiro elemento da relaÁ„o)
-n = input("Digite o ultimo elemento da relaÁ„o:")#Pegando um valor para N(Ultimo elemento da relaÁ„o)
-q = input("Quantidade de elementos da relaÁ„o:")#Pegando um valor para Q(quantidade de elementos da relaÁ„o)
+m = input("Digite o primeiro elemento da rela√ß√£o:") #Pegando para M(Primeiro elemento da rela√ß√£o)
+n = input("Digite o ultimo elemento da rela√ß√£o:")#Pegando um valor para N(Ultimo elemento da rela√ß√£o)
+q = input("Quantidade de elementos da rela√ß√£o:")#Pegando um valor para Q(quantidade de elementos da rela√ß√£o)
 
 if m < 0 or n > 100 or q < 1 or q > 10000: #validando as variaves 
     print "Valores Invalidos!!"
@@ -34,11 +34,11 @@ for elemento in listaConjuntosorteados :#mostrando elemendos sorteados
 
 arquivoSaida = open('arquivo_saida.txt','w')#criando um arquivo
 
-if (verificarSimeria(listaConjuntosorteados))==1: #verificando se h· simetria no conjunto sorteado 
+if (verificarSimeria(listaConjuntosorteados))==1: #verificando se h√° simetria no conjunto sorteado 
     texto='1'
 else: 
-    listaSimetrica = parteSimetrica(lista) # pegando a parte simetrica do conjunto
-    texto='Fecho SimÈtrico=\n{'
+    listaSimetrica = parteSimetrica(listaConjuntosorteados) # pegando a parte simetrica do conjunto
+    texto='Fecho Sim√©trico=\n{'
     for x in listaSimetrica : #arrumando "string" para adcionar no arquivo 
        texto=texto + '{0},'.format(x)
        
